@@ -23,7 +23,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen text-purple-400 font-mono">
       {/* Three.js Landing Animation */}
-      {/* <ThreeLanding /> */}
+      <ThreeLanding />
 
       <div className="w-full max-h-screen overflow-x-hidden">
         {/* Hero Section */}
