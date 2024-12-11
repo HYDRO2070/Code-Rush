@@ -46,19 +46,19 @@ function ConsoleLoadingAnimation() {
 }
 
 export default function Page() {
-  // const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 5000); // Wait 5 seconds before showing the page content
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 5000); // Wait 5 seconds before showing the page content
 
-  //   return () => clearTimeout(timer);
-  // }, []);
+    return () => clearTimeout(timer);
+  }, []);
 
-  // if (isLoading) {
-  //   return <ConsoleLoadingAnimation />;
-  // }
+  if (isLoading) {
+    return <ConsoleLoadingAnimation />;
+  }
 
   return (
     <>
