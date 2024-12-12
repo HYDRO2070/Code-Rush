@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "CodeApp",
+  title: "TerminalCode",
   description: "Created to Code Fast",
 };
 
