@@ -105,10 +105,10 @@ const MainNavbar = ({ onTopicsChange, topic}) => {
 
 
   return (
-    <nav className="w-full h-[10vh] p-4 bg-black text-white font-mono text-sm">
-      <pre className="border-t border-b border-gray-700"></pre>
+    <nav className="absolute top-0 left-0 w-full h-[10vh] z-10 p-4 bg-black text-white font-mono text-sm">
+      {/* <pre className="border-t border-b border-gray-700"></pre> */}
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-        <span className="font-bold text-purple-600"> {`>>`} TerminalCode</span>
+        <a href="/" className="font-bold text-purple-600"> {`>>`} TerminalCode</a>
         <div className="flex items-center gap-4">
           {onTopicsChange &&  <button
             onClick={() => setIsModalOpen(true)}
@@ -169,7 +169,7 @@ const MainNavbar = ({ onTopicsChange, topic}) => {
         </div>
       </div>
 
-      <pre className="border-t border-gray-700"></pre>
+      {/* <pre className="border-t border-gray-700"></pre> */}
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
