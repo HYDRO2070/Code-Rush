@@ -215,6 +215,7 @@ function Page() {
   return (
     <>
       <MainNavbar onTopicsChange={settopic} topic={topic} />
+    <div className="h-[10vh]"></div>
       <div className="p-2 text-gray-300 bg-[#000000] min-h-[90%] flex flex-col lg:flex-row gap-4">
 
         {/* Question Section */}
