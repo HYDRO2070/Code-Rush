@@ -122,6 +122,7 @@ export default function DashboardPage() {
 
     return (<>
         <MainNavbar/>
+        <div className="h-[10vh]"></div>
         <div className="min-h-screen bg-black text-purple-500 font-mono p-6 flex flex-col md:flex-row gap-6">
             {/* Left Side: User Info */}
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full md:w-1/3">
