@@ -96,7 +96,7 @@ function wrapCodeForLanguage(code, language, bottomclass) {
 
 // Function to execute code in Docker (send to the Docker server and handle response)
 async function executeCodeInDocker(code, language) {
-    const dockerServerUrl = 'http://localhost:8080/submit-code'; // Replace with actual Docker server URL
+    const dockerServerUrl = 'https://codecomplier-ppjs.onrender.com/submit-code'; // Replace with actual Docker server URL
 
     try {
         // Send the code to the Docker server for execution
