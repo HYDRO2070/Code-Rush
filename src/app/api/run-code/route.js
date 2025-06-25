@@ -17,7 +17,7 @@ export async function POST(req) {
     console.log("Full code to execute:\n", fullCode);
 
     // Send the combined code to the execution server
-    const response = await fetch("https://complier-lisj.onrender.com/execute", {
+    const response = await fetch("https://complier-2wc2.onrender.com/execute", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ code: fullCode, language }),
